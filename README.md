@@ -1,4 +1,4 @@
-# nginx-rtmp
+# nginx-rtmp-docker
 Minimal RTMP Server in Docker. Built with a static nginx binary to minimize image size.
 
 ## Install

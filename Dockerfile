@@ -1,9 +1,11 @@
 FROM busybox
 
-ADD nginx/objs/nginx /opt/nginx/sbin/nginx
-ADD nginx.conf /opt/nginx/conf/nginx.conf
+ADD nginx/objs/nginx /sbin/nginx
+ADD nginx.conf /etc/nginx.conf
+
+VOLUME ["/tmp"]
 
 EXPOSE 1935
 
 USER www-data
-CMD ["/opt/nginx/sbin/nginx"]
+CMD ["/sbin/nginx"]
